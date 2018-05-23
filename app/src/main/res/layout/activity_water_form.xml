@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/date_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:text="@string/date"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textLtr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="63dp"
+            android:text="@string/today_s_water_consumption"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/waterQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textLtr"
+            android:layout_alignBottom="@+id/textLtr"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignStart="@+id/radioGroup"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/textLtr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/radioGroup"
+            android:layout_alignEnd="@+id/radioGroup"
+            android:layout_alignRight="@+id/radioGroup"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:text="@string/ltr"
+            android:textSize="28sp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/submit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="31dp">
+
+            <RadioButton
+                android:id="@+id/radioNegative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/i_did_not_drink_enough_today" />
+
+            <RadioButton
+                android:id="@+id/radioNeutral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/i_drank_an_average_amount_today" />
+
+            <RadioButton
+                android:id="@+id/radioPositive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/i_drank_lots_today" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/reset"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="51dp"
+            android:text="@string/reset" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

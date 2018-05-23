@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nsa.hydratr.controller.DataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/dataDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="126dp"
+            android:text="@string/date"
+            android:textSize="44sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dataDate"
+            android:layout_alignStart="@+id/dataDate"
+            android:layout_below="@+id/dataDate"
+            android:layout_marginTop="40dp"
+            android:text="@string/number"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:text="@string/filler"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

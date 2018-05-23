@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Hydratr</string>
+    <string name="action_settings">Settings</string>
+    <string name="enter_water_consumption">Enter water consumption</string>
+    <string name="hydratr">Hydratr</string>
+    <string name="view_water_consumption">View water consumption</string>
+    <string name="today_s_water_consumption">Today\'s water consumption</string>
+    <string name="submit">Submit</string>
+    <string name="i_did_not_drink_enough_today">I did not drink enough today</string>
+    <string name="i_drank_an_average_amount_today">I drank an average amount today</string>
+    <string name="i_drank_lots_today">I drank lots today</string>
+    <string name="ltr">ltr</string>
+    <string name="date">date</string>
+    <string name="reset">Reset</string>
+    <string name="number">Num</string>
+    <string name="filler">Filler</string>
+    <string name="send_notification">Send notification</string>
+</resources>
